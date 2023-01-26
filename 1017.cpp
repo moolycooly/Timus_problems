@@ -11,9 +11,8 @@ main()
     for(int i =0 ; i <= N;i++) dp[i][i]=1;
     for(int n = 1; n <= N; n++)
     {
-        for(int h = 1; h <= N; h++)
+        for(int h = 1; h < n; h++)
         {
-            if(h >= n) continue;
             for(int t = 0; t < h; t++)
             {
                 dp[n][h] += dp[n-h][t];
