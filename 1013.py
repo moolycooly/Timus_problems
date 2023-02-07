@@ -1,4 +1,4 @@
-def mul(a,b,mod):
+def mul(a,b,mod): #Multiplication of two matrices (matrices A and B have the same size)
     n = len(a)
     result = []
     for i in range(n):
@@ -8,7 +8,7 @@ def mul(a,b,mod):
             for k in range(n):
                 result[i][j] = (result[i][j] + a[i][k]*b[k][j]%mod)%mod
     return result
-def binpow(a,n,mod):
+def binpow(a,n,mod):  #Binary exponentiation of a matrix, this is possible because the matrix multiplication operation is associative
     if n==2:
         return mul(a,a,mod)
     if(n%2==1):
