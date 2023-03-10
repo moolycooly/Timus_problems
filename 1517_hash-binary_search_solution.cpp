@@ -1,3 +1,6 @@
+//Task: find the largest common substring of two strings of the same length N. N <= 10^5, time limit 2 s, memory 64 MB. 
+//Solution: using polymial hashing with two modules, solve the problem using binary search.
+
 #include <bits/stdc++.h>
 #define int uint64_t
 using namespace std;
